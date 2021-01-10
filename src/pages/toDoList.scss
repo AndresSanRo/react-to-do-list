@@ -1,12 +1,9 @@
 body {
-	background-color: #eaeaea !important;
+	background-color: #0d0d0d !important;
+	* {
+		color: white;
+	}
 }
 .title {
 	margin-top: 10%;
-}
-.form {
-	display: flex;
-	button {
-		margin-left: 10px;
-	}
 }
