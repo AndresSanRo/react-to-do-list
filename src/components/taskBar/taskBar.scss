@@ -1,0 +1,21 @@
+.bar {
+	background-color: #23272b;
+	color: white;
+	margin: 10px 0px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 10px;
+	border-radius: 5px;
+	display: flex;
+	.done {
+		text-decoration: line-through;
+		color: gray;
+	}
+}
+
+.barBtn {
+	transform: translateY(20px);
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+}
