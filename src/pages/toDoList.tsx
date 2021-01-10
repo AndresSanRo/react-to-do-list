@@ -45,6 +45,11 @@ export const ToDoList = () => {
 				</Col>
 			</Row>
 			<Row>
+				<Col sm={11} md={11} lg={11}>
+					<hr />
+				</Col>
+			</Row>
+			<Row>
 				<Col>
 					<div className="list">
 						{tasks.map((task: Task) => {

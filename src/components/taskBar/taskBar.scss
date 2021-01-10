@@ -6,6 +6,11 @@
 	line-height: 40px;
 	padding: 0px 10px;
 	border-radius: 5px;
+	display: flex;
+	.done {
+		text-decoration: line-through;
+		color: gray;
+	}
 }
 
 .barBtn {
