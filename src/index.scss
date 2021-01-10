@@ -1,0 +1,20 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+$font: Work-Sans, sans-serif;
+
+body {
+	font-family: $font;
+}
+
+@mixin mobile {
+	@media (max-width: 1023px) {
+		@content;
+	}
+}
+
+@mixin mobile-landscape {
+	@media (max-width: 1023px) and (orientation: landscape) {
+		@content;
+	}
+}
