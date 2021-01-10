@@ -22,6 +22,9 @@ export const ToDoList = () => {
 			setInputText('');
 		}
 	};
+	const removeTask = (taskGuid: Guid) => {
+		setTasks((tasks) => tasks.filter((task) => task.guid !== taskGuid));
+	};
 	return (
 		<Container>
 			<Row>
@@ -53,7 +56,9 @@ export const ToDoList = () => {
 				<Col>
 					<div className="list">
 						{tasks.map((task: Task) => {
-							return <TaskBar task={task} />;
+							return (
+								<TaskBar task={task} removeTask={removeTask} />
+							);
 						})}
 					</div>
 				</Col>
